@@ -1,0 +1,106 @@
+/* ROOT */
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #090B15;
+}
+
+/* SIDEBAR (SideNavbar already has width: 240px) */
+.dashboard-layout > aside,
+.dashboard-layout > .side-navbar {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+/* RIGHT SIDE */
+.dashboard-content {
+  margin-left: 320px;  
+  width: calc(100% - 320px);
+ 
+}
+
+.side-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;      /* adjust to your sidebar width */
+  height: 100vh;
+  overflow: hidden; /* sidebar itself won't scroll */
+  z-index: 100;
+}
+
+/* HEADER (DOES NOT COVER SIDEBAR) */
+.page-header {
+  position: fixed;
+  
+  top: 0;
+
+  right: 0;
+  height: 71px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #090B15;
+  border-bottom: 1px solid #ffffff1f;
+  padding-left: 24px;
+  z-index: 20;
+ 
+}
+
+.page-header h1 {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.page-header span {
+  color: #9da7b3;
+}
+
+/* CONTENT BELOW HEADER */
+.home-content {
+  
+  min-height: 100vh;
+}
+
+/* BACKGROUND GLOW */
+.dashboard-content::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  right: -200px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(26, 65, 117, 0.35) 0%,
+    rgba(40, 102, 185, 0.25) 25%,
+    rgba(49, 127, 228, 0.15) 45%,
+    rgba(52, 138, 247, 0.05) 60%,
+    transparent 70%
+  );
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.dashboard-content > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .dashboard-layout {
+    flex-direction: column;
+  }
+
+  .page-header {
+    left: 0;
+  }
+
+  .home-content {
+    padding-top: 80px;
+  }
+}

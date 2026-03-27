@@ -1,0 +1,178 @@
+.section-tennis-betting {
+  position: relative;
+  z-index: 1;
+  background: #02040C;
+  padding: 80px;
+}
+.section-tennis-betting::before{
+  content: '';
+    background: radial-gradient(50% 40.02% at 50% 50%, #0993fd9c 0, #1847b3 33%, rgba(17, 81, 200, 0.723813) 51.5%, rgba(0, 107, 255, 0) 100%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    bottom: auto;
+    top: 0;
+}
+
+.tennis-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding: 0px 24px 28px 24px;
+  /* margin: 40px; */
+}
+
+/* CARD */
+.tennis-step-card {
+  background:
+    linear-gradient(0deg, #1c2128, #1c2128),
+    linear-gradient(
+      170.59deg,
+      rgba(255, 255, 255, 0.05) 26.08%,
+      rgba(255, 255, 255, 0.02) 83%,
+      rgba(255, 255, 255, 0) 137.69%
+    );
+
+  border-radius: 20px;
+  padding: 34px;
+  color: #e6e8ec;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  border: 1px solid #1c2738;
+}
+
+
+/* HEADER */
+.step-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .tennis-steps {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .tennis-step-card {
+  padding: 16px !important;
+  border-radius: 16px;
+  border-top: 1px solid rgba(81, 162, 255, 0.00);
+  background: linear-gradient(171deg, rgba(255, 255, 255, 0.05) 26.08%, rgba(255, 255, 255, 0.02) 83%, rgba(255, 255, 255, 0.00) 137.69%);
+}
+}
+
+.tennis-step-card {
+  position: relative;
+  background: #161922;
+  border-radius: 20px;
+  padding: 28px 24px;
+  text-align: left;
+}
+
+/* Header row */
+.step-header {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Step number circle (top-left) */
+.step-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #155DFC 0%, #0092B8 100%);
+
+  box-shadow:
+    0px 3px 4.5px -3px #0000001A,
+    0px 7.5px 11.25px -2.25px #0000001A;
+
+  color: #fff;
+  font-weight: 400;
+font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TAG — top right floating */
+.step-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 7px 11px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* Tag colors */
+.tag-blue {
+  background: #007AFF1A;
+  color: #B6BCC8;
+  /* border: 1px solid rgba(68, 155, 255, 0.3); */
+}
+
+.tag-gold {
+ 
+  border: 1px solid rgba(253, 199, 0, 0.30);
+  background: linear-gradient(90deg, rgba(240, 177, 0, 0.20) 0%, rgba(208, 135, 0, 0.20) 100%);
+  color: #FDC700;
+}
+
+/* Text spacing */
+.step-title {
+  margin-top: 42px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 32px;
+}
+
+.step-description {
+  /* margin-top: 10px; */
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #b6bcc8;
+}
+
+@media (max-width: 768px) {
+  .section-tennis-betting{
+    padding: 60px 24px;
+  }
+  .tennis-steps{
+    margin: 0;
+  }
+  .step-circle{
+    width: 42px;
+    height: 42px;
+  }
+  .step-title{
+    font-size: 20px;
+    margin-top: 4px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+  .step-description{
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: -6px;
+  }
+  .step-tag{
+    font-size: 12px;
+    padding: 4px 12px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+}

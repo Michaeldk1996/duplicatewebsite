@@ -1,0 +1,36 @@
+Post https://us-central1-bspconsult-bcd6e.cloudfunctions.net/createCheckoutSession
+Content-Type: application/json
+
+{
+    "priceId": "price_1OgVTPCf4YXq1rsyGHWrpUI3",
+    "customerEmail": "zahmatkeshdev@gmail.com",
+    "platform": "mobile"
+}
+
+
+#####
+POST https://us-central1-bspconsult-bcd6e.cloudfunctions.net/sendVerificationCode
+Content-Type: application/json
+
+{
+    "email": "zahmatkeshdev@gmail.com"
+}
+
+######
+POST https://us-central1-bspconsult-bcd6e.cloudfunctions.net/verifyCode
+Content-Type: application/json
+
+{
+    "email": "zahmatkeshdev@gmail.com",
+    "code": "278250"
+}
+
+#########
+# price_1NqWtkCf4YXq1rsyDvmsIWtF
+# price_1OgVTPCf4YXq1rsyGHWrpUI3
+# price_1OgVtOCf4YXq1rsy99bw9IHr
+
+
+# #######
+# Post https://us-central1-bspconsult-bcd6e.cloudfunctions.net/stripeWebhook
+# Content-Type: application/json

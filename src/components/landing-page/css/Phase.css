@@ -1,0 +1,154 @@
+.heading-1,
+.heading-2 {
+  color: var(--white);
+  font-family: var(--AnekBangla);
+}
+.heading-1,
+.heading-2,
+.text-variation4 {
+  font-family: var(--AnekBangla);
+}
+.pt-270 {
+  padding-top: 270px;
+}
+.w-50 {
+  width: 50%;
+}
+.phase-items-title {
+  padding-right: 85px;
+}
+.heading-1 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: right;
+  letter-spacing: -1.44px;
+}
+.heading-2 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 36px;
+}
+.mt-12 {
+  margin-top: 12px;
+}
+.mb-55 {
+  margin-bottom: 55px;
+}
+.phase-items-content {
+  padding-left: 85px;
+}
+.text-variation4 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: #7d7d7d;
+}
+.text-variation4 strong {
+  font-weight: 700;
+}
+.text-variation4:not(:first-child) {
+  margin-bottom: 35px;
+}
+.image-mgl {
+  margin-left: -55px;
+}
+.mb-180 {
+  margin-bottom: 180px;
+}
+.mb-70 {
+  margin-bottom: 70px;
+}
+.mb-100 {
+  margin-bottom: 100px;
+}
+.relative {
+  position: relative;
+}
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.draw-line {
+  background: linear-gradient(
+    180deg,
+    rgba(7, 106, 244, 0) 12.22%,
+    #076af4 43.78%,
+    rgba(7, 106, 244, 0) 91.28%
+  );
+  position: absolute;
+  top: 0;
+  width: 4px;
+  height: 540px;
+  min-height: 540px;
+  left: auto;
+  right: 0;
+  transition: height 0.1s ease-out;
+}
+.phase-items-content,
+.phase-items-title {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+.in-view .phase-items-content,
+.in-view .phase-items-title {
+  transform: translateY(0);
+  opacity: 1;
+}
+@media (max-width: 767px) {
+  .xs-pt-125 {
+    padding-top: 125px;
+  }
+  .phase-items-title {
+    width: 100%;
+    padding: 0;
+  }
+  .phase-items-content {
+    padding-left: 0;
+    width: 100%;
+  }
+  .xs-mb-75 {
+    margin-bottom: 75px;
+  }
+  .image-mgl {
+    margin-left: 0;
+  }
+  .heading-1 {
+    text-align: left;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.96px;
+    margin-bottom: 60px;
+  }
+  .text-variation4 {
+    font-size: 18px;
+  }
+  .heading-2 {
+    margin: 0 0 30px;
+    font-size: 21px;
+    line-height: 31px;
+  }
+  .xs-text-center {
+    text-align: center;
+  }
+  .text-variation4:not(:first-child) {
+    margin-bottom: 32px;
+  }
+  .timeline-line {
+    position: absolute;
+    left: 6px;
+    top: 0;
+    transform: translateX(0);
+  }
+  .phase-items-title h2 {
+    transform: none !important;
+  }
+  .phase-items-content,
+  .phase-items-title {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+  }
+}

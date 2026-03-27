@@ -1,0 +1,45 @@
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.footer-nav li a {
+  font-family: var(--Arial);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--white);
+}
+
+.f-logo {
+  max-width: 64px;
+  margin: auto;
+}
+
+.column-gap-38 {
+  column-gap: 38px;
+}
+
+.mt-55 {
+  margin-top: 55px;
+}
+
+.bg-dark {
+  background: linear-gradient(180deg, #0d1117 0, #00143d 100%);
+}
+
+@media (max-width: 767px) {
+  .f-logo {
+    max-width: 48px;
+  }
+  .footer-nav {
+    flex-wrap: wrap;
+    row-gap: 20px;
+    margin-top: 48px;
+    column-gap: 70px;
+  }
+}

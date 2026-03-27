@@ -1,0 +1,108 @@
+.profile-wrapper {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+/* Base tab */
+.tab {
+  flex: 1;
+  padding: 8px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #B9BDC7;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Text layout */
+.tab span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+
+/* Active tab */
+.tab.active {
+  background: #FFFFFF1A;
+  border: 1px solid #FFFFFF33;
+  color: #FFFFFF;
+}
+
+/* Hover (optional polish) */
+.tab:hover {
+  background: #FFFFFF12;
+}
+
+
+
+.link {
+  background: none;
+  border: none;
+  color: #0194fb;
+  cursor: pointer;
+}
+
+.access-btn {
+  margin: 0 0 24px 0;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  background: linear-gradient(#007AFF, #0C53C8);
+  border: none;
+  border-radius: 48px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  opacity: .8;
+}
+
+/* .membership {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+} */
+
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  border: none;
+}
+
+.locked {
+  padding: 40px 20px;
+  background: rgba(0, 0, 0, .5);
+  border-radius: 16px;
+  color: #fff;
+}
+
+.zone img {
+  width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .tab {
+    padding: 6px 4px;
+  }
+
+  .membership {
+    padding: 20px 24px;
+  }
+}

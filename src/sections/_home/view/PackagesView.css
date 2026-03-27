@@ -1,0 +1,115 @@
+/* =========================
+   SELECTOR BUTTONS (BASE)
+========================= */
+
+/* =====================================================
+   PACKAGES PAGE – BACKGROUND & NAVBAR
+===================================================== */
+
+/* Page background */
+.packages-pages {
+  position: relative;
+  min-height: 100vh;
+  background: #090B15;
+  overflow: hidden;
+}
+
+
+/* Top-right blue gradient glow */
+.packages-pages::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 122, 255, 0.35),
+    rgba(0, 122, 255, 0.15),
+    rgba(0, 122, 255, 0.05),
+    transparent 70%
+  );
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Keep content above glow */
+.packages-pages > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* =====================================================
+   NAVBAR – TRANSPARENT (PACKAGES PAGE ONLY)
+===================================================== */
+
+.packages-pages .navbar {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Optional: tighter navbar look */
+.packages-pages .navbar-inner {
+  padding: 0 80px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  .packages-pages::before {
+    top: -120px;
+    right: -120px;
+    width: 360px;
+    height: 360px;
+    filter: blur(70px);
+  }
+
+  .packages-pages .navbar-inner {
+    padding: 0 20px;
+  }
+}
+
+
+.packages-pages .price-selector {
+  display: none; 
+  gap: 10px;
+  margin-bottom: 24px;
+  padding: 0 16px;
+}
+.packages-pages .section-price::before {
+  display: none !important;
+  content: none !important;
+}
+.packages-pages .section-price{
+  padding: 40px 20px;
+}
+
+/* =========================
+   MOBILE ONLY BEHAVIOR
+========================= */
+
+@media (max-width: 768px) {
+
+  .packages-pages .navbar-inner {
+    display: flex;
+    justify-content: center;
+  }
+
+
+    .packages-pages .brand-text {
+    display: inline-block !important;
+    
+  }
+
+  /* --------------------------------
+     GLOBAL LEFT ALIGN
+  --------------------------------- */
+
+ 
+
+
+ 
+}
+

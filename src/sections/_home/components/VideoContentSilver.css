@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap');
+* {
+  font-family: 'Figtree', sans-serif;
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+
+.video-outer-box {
+  border-radius: 8px;
+  padding: 2px;
+  min-width: 880px;
+}
+
+.video-inner-box {
+  background-color: #FFFFFF0F;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.video-iframe {
+  width: 100%;
+  height: 550px;
+  border: none;
+}
+
+.video-locked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 425px;
+  background-color: #FFFFFF0D;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 35px;
+  border-radius: 8px;
+}
+
+.video-locked h3 {
+  margin-top: 24px;
+  font-weight: 600;
+}
+
+.purchase-wrapper {
+  background: linear-gradient(#047efc, #12488f);
+  width: 240px;
+  height: 48px;
+  border-radius: 8px;
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+.purchase-wrapper:hover {
+  opacity: 0.8;
+}
+
+.purchase-btn {
+  width: 100%;
+  height: 48px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.module-row {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.module-row svg {
+  color: #ffffff;
+}
+
+.module-title {
+  margin-left: 16px;
+  font-size: 18px;
+  font-size: 500;
+}
+
+.module-spacer {
+  flex: 1;
+}
+
+.module-row.clickable {
+  cursor: pointer;
+}
+
+.module-row {
+  display: flex;
+  align-items: center;
+  cursor: default;
+padding: 12px;
+  border-radius: 12px;
+}
+
+.module-row.clickable {
+  cursor: pointer;
+}
+
+.module-row.active {
+ 
+  background-color: rgba(192, 192, 192, 0.15); 
+}
+
+
+@media (max-width: 768px) {
+
+  .video-container {
+    padding: 0;
+  }
+
+  .video-outer-box {
+    min-width: unset;        
+    width: 100%;           
+  }
+
+  .video-inner-box {
+    padding: 16px;
+    background: #FFFFFF0F;
+  }
+
+  .video-iframe {
+    width: 100%;
+    height: auto;            
+    /* aspect-ratio: 16 / 9;     */
+    border-radius: 10px;
+    height: 210px;
+  }
+
+  .module-row {
+    padding: 8px;
+  }
+
+  .module-title {
+    font-size: 14px;
+    text-align: left;
+    line-height: 20px;
+  }
+  .video-locked{
+    padding: 0 40px
+  }
+    .video-locked h3 {
+    margin-top: 16px;
+  }
+  .v-lock{
+    height: 48px;
+    width: 48px;
+  }
+  
+  .silver-content-icon{
+    width: 32px;
+    height: 32px;
+  }
+  .blue-play{
+    width: 22px;
+    height: 22px;
+  }
+}
+

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap');
+* {
+  font-family: 'Figtree', sans-serif;
+}
+
+.side-navbar {
+  
+  width: 320px;               
+  height: 100vh;
+  background: #ffffff05;
+  border-right: 1px solid #ffffff1f;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.side-navbar::before{
+  content: '';
+  position: absolute;
+  width: 229px;
+  height: 229px;
+  border-radius: 329px;
+  background: rgba(0, 122, 255, 0.10);
+  filter: blur(97px);
+  z-index: 0;
+}
+
+/* Header */
+.nav-header {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #ffffff1f;
+  padding-left: 20px;
+}
+
+.logo {
+  width: 31.43px;
+  height: 32px;
+}
+.nav-header p{
+    font-size: 20px;
+    font-weight: 700;
+}
+.company-name span{
+    font-size: 20px;
+    font-weight: 400;
+}
+.main-container{
+    padding: 20px 20px;
+}
+
+/* Section */
+.section-title {
+  font-size: 12px;
+  font-weight: 400;
+  color: #626263;
+  margin-bottom: 12px;
+}
+
+/* Menu */
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.nav-con{
+    display: flex;
+    gap: 12px;
+    pointer-events: none;
+}
+.nav-item svg {
+  pointer-events: none;
+}
+.nav-header,
+.main-container,
+.logout-btn {
+  position: relative;
+  z-index: 1;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: transparent;
+
+  border-radius: 8px;
+  border: 1px solid transparent;   /* ✅ FIX */
+
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  transition: background 0.2s ease, border 0.2s ease;
+}
+
+
+.nav-item:hover {
+  background: #ffffff12;
+  border-color: #2b2f38;
+}
+
+
+.icon {
+  font-size: 18px;
+}
+
+/* Logout */
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: none;
+  background: transparent;
+  color: #f04438;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 8px;
+   border: 1px solid transparent; 
+  
+}
+
+.logout-btn:hover {
+    background: #ffffff12;
+  border: 1px solid #2b2f38;
+
+  /* INNER SHADOW */
+  box-shadow: inset 0 2px 4px #ffffff1a;
+
+}
+
+
+.nav-item.active {
+  background: #ffffff12;
+  border-color: #2b2f38;
+
+  box-shadow: inset 0 2px 4px #ffffff1a;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+
+.logout-container {
+  margin-top: auto;      
+  padding: 0 20px 20px;  /* same side spacing */
+  position: relative;
+  z-index: 1;
+}
+
+.logout-btn {
+  width: 100%;
+  padding: 10px 12px;    /* same as nav-item */
+}
+
+
+.c-icon{
+  height: 18px;
+  width: 18px;
+}

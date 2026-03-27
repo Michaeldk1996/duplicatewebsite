@@ -1,0 +1,35 @@
+/* App.css */
+body {
+  font-family: 'Figtree', sans-serif;
+}
+
+.timezoneSelect {
+  width: 280px;
+  font-size: 13px;
+  margin-left: 24px;
+}
+
+.muiTelInput {
+  margin-top: 8px;
+  > div {
+    background-color: transparent;
+    border: 1px solid hsla(0,0%,100%,.08);
+    > div {
+      margin-top: 0 !important;
+    }
+    > input {
+      color: #FFF;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+}
+
+.MuiDrawer-docked, .MuiDrawer-paper {
+  width: 300px!important;
+}
+
+.MuiAppBar-root {
+  margin-left: 300px!important;
+  width: calc(100% - 300px)!important;
+}

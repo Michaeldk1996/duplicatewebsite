@@ -1,0 +1,143 @@
+body {
+  font-family: 'Figtree', sans-serif;
+}
+.section-features:before {
+  content: '';
+  background: radial-gradient(50% 40.02% at 50% 50%, #0993fd9c 0, #1847b3 33%, rgba(17, 81, 200, 0.723813) 51.5%, rgba(0, 107, 255, 0) 100%);
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+}
+.section-features {
+  position: relative;
+  padding: 0px 0;
+  background: #030511;
+}
+.section-features:before {
+  bottom: auto;
+  top: 0;
+}
+
+.mb-85 {
+  margin-bottom: 85px;
+}
+
+
+.features-content {
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.features-badge {
+  display: inline-block;
+  margin-bottom: 22px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 50px;
+
+  /* background: #51A2FF @ 13% */
+  background: rgba(81, 162, 255, 0.13);
+  backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+
+  /* required for border-image */
+  /* border: 1px solid #2850959a; */
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.features-badge::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  padding: 1px; /* thickness of the border */
+  background: linear-gradient(95deg, #51a2ff9e 14%, rgb(255 255 255 / 5%) 50%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.features-badge {
+  position: relative;
+  z-index: 1;
+}
+
+.features-text {
+  text-align: center;
+}
+
+/* Grey paragraph text */
+.features-description {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 22px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mb-65{
+  margin-bottom: 64px;
+}
+.pt-0{
+  padding-top: 0 !important;
+}
+.pb-0{
+  padding-bottom: 0 !important;
+}
+
+
+
+ @media (max-width: 767px) {
+  .section-features{
+    padding: 0;
+  }
+  .section-features .container{
+    padding: 60px 24px !important;
+  }
+  .features-badge {
+    font-size: 14px;
+    padding: 8px 16px;
+     margin-bottom: 22px;
+  }
+
+  .features-highlight {
+    font-size: 16px;
+  }
+
+  .features-description {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .mb-65{
+    margin-bottom: 32px;
+  }
+}
+
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+    margin-bottom: 0;
+  }
+}
