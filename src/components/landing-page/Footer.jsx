@@ -81,8 +81,8 @@ const Footer = () => {
           <ul>
             <li><a href="https://www.instagram.com/bspconsult/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
             <li><a href="/terms-condition">Terms & Conditions</a></li>
-            <li><a href="https://bspconsult.com/privacy-policy">Privacy Policy</a></li>
-            <li><a href="mailto:management@bspconsult.com">Contact Us</a></li>
+            <li><a href="https://bspconsult.online/privacy-policy">Privacy Policy</a></li>
+            <li><a href="mailto:management@bspconsult.online">Contact Us</a></li>
           </ul>
         </div>
 
